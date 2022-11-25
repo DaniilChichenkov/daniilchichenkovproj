@@ -1,0 +1,842 @@
+body 
+    width: 100%
+    height: auto
+    margin: 0
+    padding: 0
+
+p 
+    margin: 0
+    padding: 0
+
+button
+    border: none
+    background-color: transparent
+    width: auto
+    height: auto
+
+a 
+    margin: 0
+    padding: 0
+    color: #fff
+    text-decoration: none
+
+* 
+    box-sizing: border-box
+
+@mixin rect 
+    width: 42px
+    height: 8px
+    background-color: #E08631    
+
+/* Mobile */
+@media screen and (min-width: 320px) 
+    .nav
+        padding: 10px 15px
+        &_links-container
+            display: none
+        &_button-container 
+            display: none
+
+    .header
+        padding: 180px 20px 100px 20px
+        &_content-container
+            &_logo
+                width: 170px
+                height: 65px
+            &_h
+                font-size: 35px
+            &_text
+                font-size: 17px
+    
+    .description
+        padding: 100px 15px 90px 15px
+        &_content-container
+            flex-direction: column
+            align-items: center
+            &_col
+                align-items: center
+                &:last-child
+                    margin-top: 40px
+                &-text
+                    text-align: center
+                &-button
+                    width: 116px
+                    height: 42px
+    .second-h
+        &_content-container
+            padding: 100px 15px 140px 15px
+            &_text
+                margin-top: 32px
+                font-size: 35px
+                line-height: 35px
+    .arrangements
+        &_content-container
+            padding: 100px 25px
+            &_text-container
+                &_h
+                    font-size: 32px
+                &_text
+                    font-size: 16px
+            &_conditions-container
+                flex-direction: column
+                &_section
+                    width: 100%
+                    margin-top: 40px
+                    &:first-child
+                        margin-top: 0px
+    .escape
+        &_content-container
+            padding: 100px 25px 130px 25px
+            &_main-content
+                flex-direction: column
+                margin-top: 30px
+                &_col
+                    margin-top: 40px
+                    &:first-child
+                        margin-top: 0px
+                    &_section
+                        flex-direction: column
+                        align-items: flex-start
+                        margin-top: 40px
+                        &:first-child
+                            margin-top: 0px
+                        &_text-container
+                            margin-top: 10px
+    .past
+        &_content-container
+            padding: 100px 25px 150px 25px
+            &_slider
+                &_inner-container
+                    width: 1000px
+                    &_slide
+                        width: 84vw
+                        padding: 30px 20px
+                &_buttons-container
+                    justify-content: center
+/* Mobile M */ 
+@media screen and (min-width: 375px)
+    .past
+        &_content-container
+            &_slider
+                &_inner-container
+                    width: 1100px
+                    &_slide
+                        width: 88vw
+                        padding: 30px
+/* Mobile L */
+@media screen and (min-width: 425px)
+    .past
+        &_content-container
+            &_slider
+                &_inner-container
+                    width: 1500px
+                    &_slide
+                        width: 90vw
+                        
+/* Tablet */
+@media screen and (min-width: 768px)
+    .nav
+        padding: 25px 30px
+        &_links-container
+            display: flex
+            a
+                font-size: 17px
+        &_button-container
+            display: block
+        &_burger-menu_button-container
+            display: none
+    .header
+        padding: 180px 35px 100px 35px
+        &_content-container
+            &_logo
+                width: 256px
+                height: 90px
+            &_h
+                font-size: 40px
+            &_text
+                font-size: 14px
+    
+    .description
+        padding: 100px 35px 90px 35px
+        &_content-container
+            flex-direction: row
+            justify-content: space-evenly
+            align-items: flex-start
+            &_col
+                width: 43%
+                align-items: flex-start
+                &:last-child
+                    margin-top: 0px
+                &-text
+                    text-align: left
+    .second-h
+        &_content-container
+            padding: 100px 35px 140px 35px
+            &_text
+                font-size: 50px
+                line-height: 50px
+    .arrangements
+        &_content-container
+            padding: 100px 35px
+            &_text-container
+                width: 75%
+            &_conditions-container
+                flex-direction: row
+                justify-content: space-between
+                &_section
+                    width: 28%
+                    margin-top: 0px
+    .escape
+        &_content-container
+            padding: 100px 35px 140px 35px
+            &_text-container
+                width: 75%
+            &_main-content
+                width: 75%
+                &_col
+                    &_section
+                        flex-direction: row
+                        align-items: flex-start
+                        &_text-container
+                            margin-top: 0px
+                            margin-left: 16px
+    .past
+        &_content-container
+            padding: 100px 0px 150px 0px
+            &_header-container
+                padding: 0px 150px
+            &_slider
+                padding: 0px 0px 0px 35px
+                &_inner-container
+                    width: 1500px
+                    &_slide
+                        width: 80vw
+                        padding: 30px 40px 30px 30px
+                        margin-left: 20px
+                        &:first-child
+                            margin-left: 0px
+                &_buttons-container
+                    padding: 0px 35px 0px 0px
+                    justify-content: flex-end
+
+/* Laptop */
+@media screen and (min-width: 1024px)
+    .nav
+        padding: 30px 120px
+        &_logo-container 
+            img
+                transform: scale(1.2, 1.2)
+        &_links-container
+            a
+                font-size: 18px
+    .header
+        padding: 180px 130px 100px 130px
+        &_content-container
+            &_h
+                font-size: 48px
+            &_text
+                font-size: 16px 
+    .description
+        padding: 100px 130px 90px 130px
+        &_content-container
+            justify-content: center
+            &_col
+                width: 20%
+                &:first-child
+                    margin-right: 20px
+                &:last-child
+                    margin-left: 20px
+    .second-h
+        &_content-container
+            padding: 100px 90px 140px 90px
+            &_text
+                font-size: 96px
+                line-height: 96px
+    .arrangements
+        &_content-container
+            padding: 100px 136px
+            &_text-container
+                width: 40%
+    .escape
+        &_content-container
+            padding: 100px 136px 130px 136px
+            &_text-container
+                width: 40%
+            &_main-content
+                width: 100%
+                flex-direction: row
+                justify-content: space-between
+                margin-top: 50px
+                &_col
+                    margin-top: 0px
+                    width: 45%
+                    &_section
+                        height: 50px
+    .past
+        &_content-container
+            &_header-container
+                padding: 0px 550px
+            &_slider
+                padding: 0px 0px 0px 140px
+                &_inner-container
+                    width: 3000px
+                    &_slide
+                        width: 35vw
+                        padding: 35px 45px
+                &_buttons-container
+                    padding: 0px 150px 0px 0px
+.wrapper
+    width: 100%
+    height: auto
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+/* Nav */
+.nav 
+    width: 100%
+    height: auto
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #52503B
+    position: relative
+    z-index: 5
+    &_links-container
+        width: auto
+        height: auto
+        justify-content: space-between
+        align-items: center
+        a
+            font-family: 'Montserrat'
+            font-weight: 400
+            line-height: 20px
+            position: relative
+            margin-left: 24px
+            &:first-child
+                margin-left: 0px
+            &:after
+                content: ""
+                position: absolute
+                display: block
+                width: 100%
+                height: 2px
+                background-color: #000
+                margin-top: 3px
+                border-radius: 15px
+                background-color: #fff
+                transition: 0.25s opacity
+                opacity: 0
+            &:hover
+                &:after
+                    opacity: 1
+    &_button-container
+        width: auto
+        height: auto
+        button
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: "Montserrat"
+            font-size: 16px
+            line-height: 20px
+            color: #52503B
+            background-color: #fff
+            border-radius: 6px
+            padding: 11px 18px
+            cursor: pointer
+            transform: scale(1.0, 1.0)
+            transition: 0.5s transform
+            &:hover
+                transform: scale(1.15, 1.15)
+    &_burger-menu_button-container
+        width: 50px
+        height: auto
+        box-sizing: border-box
+        div
+            width: 100%
+            height: 4px
+            background-color: gray
+            border-radius: 10px
+            margin: 5px 0px
+            background-color: #fff
+            &:first-child 
+                margin: 0px 
+
+/* Burger menu */
+.burger-menu
+    width: 100%
+    height: 100%
+    background-color: #52503B
+    position: absolute
+    z-index: 10
+    top: 0px
+    left: -100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding: 100px 0px
+    box-sizing: border-box
+    &_content-container 
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        a
+            font-family: 'Montserrat'
+            font-weight: 400
+            line-height: 20px
+            position: relative
+            font-size: 20px
+            margin-top: 20px
+            &:first-child 
+                margin-top: 0px
+        button
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: "Montserrat"
+            font-size: 16px
+            line-height: 20px
+            color: #52503B
+            background-color: #fff
+            border-radius: 6px
+            padding: 11px 18px
+            cursor: pointer
+            margin-top: 40px
+    &_close-button
+        font-family: "Montserrat"
+        font-size: 40px
+        color: #fff
+
+/* Burger menu animation */
+.burger-menu_open
+    animation-name: burger-menu_open-animation
+    animation-duration: 0.5s
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+
+@keyframes burger-menu_open-animation
+    0% 
+        left: -100%
+    100% 
+        left: 0%
+
+.burger-menu_close
+    animation-name: burger-menu_close-animation
+    animation-duration: 0.5s
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+
+@keyframes burger-menu_close-animation
+    0%
+        left: 0%
+    100%
+        left: -100%
+
+/* Burger menu open btn animation */
+.burger-menu_open-button_animation
+    animation-name: burger-menu_open-button_animation
+    animation-duration: 0.3s
+    animation-iteration-count: 1
+
+@keyframes burger-menu_open-button_animation
+    0%
+        transform: scale(1.0, 1.0)
+    50%
+        transform: scale(0.2, 1.0)
+    100% 
+        transform: scale(1.0, 1.0)
+
+/* Burger menu close btn animation */
+.burger-menu_close-button_animation
+    animation-name: burger-menu_close-button_animation
+    animation-duration: 0.3s
+    animation-iteration-count: 1
+
+@keyframes burger-menu_close-button_animation
+    0%
+        transform: rotate(0deg)
+    100% 
+        transform: rotate(-180deg)
+
+/* Header */
+.header 
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-image: url('/images/header-images/bg.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    box-sizing: border-box
+    &_content-container 
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_h
+            font-family: "Montserrat"
+            font-weight: 400
+            text-align: center
+            color: #fff
+            margin-top: 35px
+        &_text
+            font-family: "Montserrat"
+            font-weight: 400
+            text-align: center
+            color: #fff
+            margin-top: 35px
+            text-transform: uppercase
+            letter-spacing: 2px
+    button
+        width: 34px
+        height: 53px
+        border-radius: 40px
+        border: 2px solid #fff
+        display: flex
+        align-items: flex-start
+        margin: 0 auto
+        margin-top: 117px
+        div
+            width: 2px
+            height: 10px
+            background-color: #fff
+            margin: 0 auto
+            margin-top: 9px
+
+/* Description */
+.description
+    width: 100%
+    height: auto
+    background-color: #FAF8F0
+    &_rect
+        width: 42px
+        height: 8px
+        background-color: #E08631
+        margin: 0 auto
+    &_content-container
+        width: 100%
+        height: auto
+        margin-top: 33px
+        display: flex
+        &_col
+            display: flex
+            flex-direction: column
+            &-button
+                background-color: #52503B
+                border-radius: 6px
+                color: #fff
+                margin-top: 41px
+                font-family: "Montserrat"
+                font-size: 14px
+                font-weight: 400
+                transform: scale(1.0, 1.0)
+                transition: 0.3s transform
+                &:hover
+                    transform: scale(1.15, 1.15)
+                    cursor: pointer
+            &-text
+                font-family: "Montserrat"
+                font-size: 14px
+                line-height: 20px
+                color: #333333
+
+
+/* Second h */
+.second-h 
+    width: 100%
+    height: auto
+    background-color: #fff
+    &_content-container
+        width: 100%
+        height: auto
+        &_rect
+            width: 42px
+            height: 8px
+            background-color: #E08631
+            margin: 0 auto
+        &_text
+            font-family: "Montserrat"
+            font-weight: 700
+            text-align: center
+            color: #52503B
+    &_image-container
+        width: 100%
+        height: auto
+        &_image
+            width: 100%
+
+.arrangements
+    width: 100%
+    height: auto
+    background-color: #FAF8F0
+    box-sizing: border-box
+    &_content-container
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_rect
+            width: 42px
+            height: 8px
+            background-color: #E08631
+        &_text-container
+            height: auto
+            margin: 0 auto
+            &_h
+                font-family: "Montserrat"
+                font-weight: 400
+                color: #52503B
+                text-align: center
+                line-height: 36px
+                margin-top: 30px
+            &_text
+                font-family: "Montserrat"
+                font-weight: 400
+                text-align: center
+                color: #52503B
+                line-height: 24px
+                margin-top: 15px
+        &_conditions-container
+            width: 100%
+            height: auto
+            display: flex
+            align-items: center
+            margin-top: 30px
+            &_section
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_h
+                    font-family: "Montserrat"
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    color: #52503B
+                    text-align: center
+                    margin-top: 12px
+                &_text
+                    font-family: "Montserrat"
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 20px
+                    text-align: center
+                    color: #52503B
+                    margin-top: 1px
+.escape
+    width: 100%
+    height: auto
+    &_content-container
+        width: 100%
+        height: auto
+        &_rect
+            width: 42px 
+            height: 8px
+            background-color: #E08631
+        &_text-container
+            height: auto
+            margin-top: 30px
+            &_h
+                font-family: "Montserrat"
+                font-size: 32px
+                font-weight: 400
+                color: #52503B
+                line-height: 36px
+                margin: 0
+            &_text
+                font-family: "Montserrat"
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                color: #52503B
+                margin-top: 14px
+        &_main-content
+            height: auto
+            display: flex
+            align-items: flex-start
+            &_col
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_section
+                    width: 100%
+                    display: flex
+                    &_text-container
+                        &_h
+                            font-family: "Montserrat"
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 20px
+                            color: #52503B
+                        &_text
+                            font-family: "Montserrat"
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 20px
+                            color: #333333
+
+.past
+    width: 100%
+    height: auto
+    background-color: #FAF8F0
+    &_content-container
+        width: 100%
+        height: auto
+        box-sizing: border-box
+        &_header-container
+            width: 100%
+            height: auto
+            margin: 0 auto
+            &_rect
+                @include rect
+                margin: 0 auto
+            &_h
+                font-family: "Montserrat"
+                font-weight: 400
+                font-size: 32px
+                line-height: 36px
+                text-align: center
+                color: #52503B
+                margin-top: 30px
+            &_text 
+                font-family: "Montserrat"
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                text-align: center
+                color: #52503B
+                margin-top: 14px
+        &_slider
+            width: 100%
+            height: auto
+            box-sizing: border-box
+            overflow: hidden
+            margin-top: 30px
+            padding-bottom: 20px
+            &_inner-container
+                height: auto
+                display: flex
+                justify-content: flex-start
+                align-items: flex-start
+                position: relative
+                &_slide
+                    background-color: #FFF
+                    border: 1px solid rgba(82, 80, 59, 0.1)
+                    border-radius: 4px
+                    box-sizing: border-box
+                    &_content
+                        width: 100%
+                        height: auto
+                        img
+                            cursor: pointer
+                        &_h
+                            font-family: "Montserrat"
+                            font-size: 18px
+                            font-weight: 400
+                            line-height: 24px
+                            color: #333333
+                            margin-top: 10px
+                        &_comment
+                            font-family: "Montserrat"
+                            font-size: 14px
+                            font-weight: 400
+                            color: #333
+                            line-height: 20px
+                            margin-top: 11px
+                        &_name-container
+                            width: 100%
+                            height: auto
+                            display: flex
+                            justify-content: flex-start
+                            align-items: center
+                            margin-top: 20px
+                            &_rect
+                                width: 2px
+                                height: 20px
+                                background-color: #E08631
+                            &_name
+                                font-family: "Montserrat"
+                                font-size: 14px
+                                font-weight: 400
+                                line-height: 20px
+                                color: #333
+                                margin-left: 10px
+            &_buttons-container
+                width: 100%
+                height: auto
+                display: flex
+                align-items: center
+                margin-top: 40px
+                &_button
+                    width: 60px
+                    height: 60px
+                    border: 2px solid #52503B
+                    border-radius: 30px
+                    margin-left: 10px
+                    cursor: pointer
+                    transform: scale(1.0, 1.0)
+                    transition: 0.25s transform ease-in-out
+                    &:first-child 
+                        margin-left: 0px
+                    &:hover
+                        transform: scale(0.8, 0.8)
+
+//Animation of current slide 
+.current-slide_close
+    animation-name: current-slide_animation
+    animation-iteration-count: 1
+    animation-timing-function: easy-in
+    animation-fill-mode: forwards
+    animation-duration: 0.7s
+
+@keyframes current-slide_animation
+    0% 
+        transform: scale(1.0, 1.0)
+    100%
+        transform: scale(0.5, 0.5)
+
+//Animation of next slide
+.next-slide_open
+    animation-name: next-slide_animation
+    animation-iteration-count: 1
+    animation-timing-function: easy-in
+    animation-fill-mode: forwards
+    animation-duration: 0.7s
+
+@keyframes next-slide_animation
+    0%
+        transform: scale(0.5, 0.5)
+    100%
+        transform: scale(1.0, 1.0)
+
+.hidden
+    display: none       
+
+
+//Button click animation
+.slider_button-click
+    animation-name: slider_button-click_animation
+    animation-duration: 0.3s
+    animation-iteration-count: 1
+    animation-timing-function: ease-in
+
+@keyframes slider_button-click_animation
+    0%
+        transform: scale(1.0, 1.0)
+        background-color: transparent
+    50% 
+        transform: scale(0.5, 0.5)
+        background-color: #52503B
+    100%
+        transform: scale(1.0, 1.0)
+        background-color: transparent
